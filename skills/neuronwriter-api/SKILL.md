@@ -211,7 +211,7 @@ Score each existing query's relevance to the user's target keyword:
 ### Step 3: Use multi-proxy strategy
 Always fetch 2-3 proxy queries if available. Different proxies may reveal different competitor sets, different term recommendations, and different intent distributions. Present the data clearly labeled:
 
-> "Proxy data from [keyword 1], [keyword 2], and [keyword 3]. The actual [user keyword] data will be more precise once quota resets. Check your dashboard for the exact date."
+> "Proxy data from [keyword 1], [keyword 2], and [keyword 3]. The actual [user keyword] data will be more precise once quota resets on May 25."
 
 ### Step 4: Extract real values from each proxy
 Pull actual word count targets, competitor scores, term usage percentages, and SERP intent data from each proxy. Do NOT average them — present them side by side so the user sees the range.

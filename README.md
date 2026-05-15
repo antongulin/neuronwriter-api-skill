@@ -11,16 +11,16 @@ AI agent skill providing structured instructions for creating SEO-optimized cont
 
 ## Skill
 
-### [neuronwriter-api](./SKILL.md)
+### [neuronwriter-api](./skills/neuronwriter-api/SKILL.md)
 
 Complete API integration for NEURONwriter. Performs the full content optimization lifecycle: project discovery, keyword analysis (with quota-aware proxy fallback), content brief generation with NLP term ranges, HTML content generation that enforces real term frequency ranges, content import and scoring, and iterative improvement.
 
 ```bash
 # List projects
-./scripts/neuronwriter.sh list-projects
+./skills/neuronwriter-api/scripts/neuronwriter.sh list-projects
 
 # Create a keyword analysis query
-./scripts/neuronwriter.sh new-query '{
+./skills/neuronwriter-api/scripts/neuronwriter.sh new-query '{
   "project": "PROJECT_ID",
   "keyword": "your target keyword",
   "engine": "google.com",
@@ -29,10 +29,10 @@ Complete API integration for NEURONwriter. Performs the full content optimizatio
 }'
 
 # Poll until ready and get recommendations
-./scripts/neuronwriter.sh wait-and-get QUERY_ID 30
+./skills/neuronwriter-api/scripts/neuronwriter.sh wait-and-get QUERY_ID 30
 
 # Import content and get score
-./scripts/neuronwriter.sh import-content '{
+./skills/neuronwriter-api/scripts/neuronwriter.sh import-content '{
   "query": "QUERY_ID",
   "html": "<h1>Title</h1><p>Content...</p>",
   "title": "SEO Title",
@@ -62,11 +62,11 @@ The CLI automatically detects your installed coding agents. See [skills.sh](http
 
 ### Manual
 
-Clone the repo and copy the skill to your agent's skills path:
+Clone the repo and copy the skills to your agent's skills path:
 
 ```bash
 git clone https://github.com/antongulin/neuronwriter-api-skill.git
-cp -r neuronwriter-api-skill/* <agent-skills-path>/neuronwriter-api/
+cp -r neuronwriter-api-skill/skills/* <agent-skills-path>/
 ```
 
 Replace `<agent-skills-path>` with your agent's skills directory. Common paths:
@@ -107,6 +107,7 @@ Skills are compatible with AI coding assistants that support the [skills.sh](htt
 ## Related
 
 - [NEURONwriter](https://neuronwriter.com) — The SEO content optimization platform
+- [NEURONwriter API Docs](https://contadu.crisp.help/en/article/neuronwriter-api-how-to-use-2ds6hx) — API documentation
 - [opencode-skill-creator](https://github.com/antongulin/opencode-skill-creator) — Tool used to generate this skill
-- [mole-skills](https://github.com/antongulin/mole-skills) — macOS system maintenance skills by the same author
 - [bundle-social-api-skill](https://github.com/antongulin/bundle-social-api-skill) — Social media API skills by the same author
+- [mole-skills](https://github.com/antongulin/mole-skills) — macOS system maintenance skills by the same author
