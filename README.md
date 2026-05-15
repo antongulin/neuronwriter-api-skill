@@ -1,6 +1,6 @@
 # NEURONwriter API Skill
 
-[![skills.sh](https://skills.sh/b/antongulin/neuronwriter-skills)](https://skills.sh/antongulin/neuronwriter-skills)
+[![skills.sh](https://skills.sh/b/antongulin/neuronwriter-api-skill)](https://skills.sh/antongulin/neuronwriter-api-skill)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
 AI agent skill for the [NEURONwriter API](https://neuronwriter.com) — SEO content optimization platform with NLP-driven keyword analysis, competitor SERP analysis, and content scoring.
@@ -49,13 +49,13 @@ The skill handles quota exhaustion gracefully by falling back to proxy queries f
 **Project scope** — installs locally in the current project:
 
 ```bash
-npx skills add antongulin/neuronwriter-skills
+npx skills add antongulin/neuronwriter-api-skill
 ```
 
 **Global scope** (`-g`) — available across all projects:
 
 ```bash
-npx skills add antongulin/neuronwriter-skills -g
+npx skills add antongulin/neuronwriter-api-skill -g
 ```
 
 The CLI automatically detects your installed coding agents. See [skills.sh](https://skills.sh) for more options.
@@ -65,8 +65,8 @@ The CLI automatically detects your installed coding agents. See [skills.sh](http
 Clone the repo and copy the skill to your agent's skills path:
 
 ```bash
-git clone https://github.com/antongulin/neuronwriter-skills.git
-cp -r neuronwriter-skills/skill <agent-skills-path>/neuronwriter-api
+git clone https://github.com/antongulin/neuronwriter-api-skill.git
+cp -r neuronwriter-api-skill/skill <agent-skills-path>/neuronwriter-api
 ```
 
 Replace `<agent-skills-path>` with your agent's skills directory. Common paths:
