@@ -1,6 +1,17 @@
 ---
 name: neuronwriter-api
-description: Complete API integration for NEURONwriter — the SEO content optimization platform. Use this skill for ANY content creation, SEO analysis, keyword research, competitor SERP analysis, content optimization, or bulk content workflow task. This skill triggers whenever the user wants to create SEO-optimized content, analyze keywords against real SERP data, get NLP term recommendations, write content that ranks, evaluate content scores, import/export content between NeuronWriter and other tools, or automate content pipelines. If the user mentions keywords, content scoring, SERP analysis, competitor URL analysis, term optimization, content import/export, or any SEO writing workflow — load this skill. It turns the agent into a NeuronWriter API expert: exploring the API, creating queries, polling for readiness, extracting recommendations, generating optimized content, importing HTML, evaluating scores, and automating the full lifecycle.
+description: >-
+  Complete API integration for NEURONwriter — the SEO content optimization platform.
+  Use this skill for ANY content creation, SEO analysis, keyword research, competitor
+  SERP analysis, content optimization, or bulk content workflow task. This skill triggers
+  whenever the user wants to create SEO-optimized content, analyze keywords against real
+  SERP data, get NLP term recommendations, write content that ranks, evaluate content
+  scores, import/export content between NeuronWriter and other tools, or automate content
+  pipelines. If the user mentions keywords, content scoring, SERP analysis, competitor
+  URL analysis, term optimization, content import/export, or any SEO writing workflow
+  — load this skill. It turns the agent into a NeuronWriter API expert — exploring the
+  API, creating queries, polling for readiness, extracting recommendations, generating
+  optimized content, importing HTML, evaluating scores, and automating the full lifecycle.
 compatibility:
   require: ["curl", "python3", "bash"]
 ---

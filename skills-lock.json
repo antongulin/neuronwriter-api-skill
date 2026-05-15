@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "skills": {
+    "bundle-social-accounts": {
+      "source": "antongulin/bundle-social-api-skill",
+      "sourceType": "github",
+      "skillPath": "skills/bundle-social-accounts/SKILL.md",
+      "computedHash": "810d63bb7e9ec917bd382fa5a427b683ad38e90f700c06b2c5d178ef2bae410e"
+    },
+    "bundle-social-analytics": {
+      "source": "antongulin/bundle-social-api-skill",
+      "sourceType": "github",
+      "skillPath": "skills/bundle-social-analytics/SKILL.md",
+      "computedHash": "6e2fd570626526906e6441b51e7d8e2606079058af5f50a49caa254dc701e67f"
+    },
+    "bundle-social-comments": {
+      "source": "antongulin/bundle-social-api-skill",
+      "sourceType": "github",
+      "skillPath": "skills/bundle-social-comments/SKILL.md",
+      "computedHash": "f6a2acec6563f301bcd2e36e70608a7ed986317d90557f05483a56ecc42d7dc4"
+    },
+    "bundle-social-core": {
+      "source": "antongulin/bundle-social-api-skill",
+      "sourceType": "github",
+      "skillPath": "skills/bundle-social-core/SKILL.md",
+      "computedHash": "6798e85712dbd78b197476b01e56d58abe5f24de551ac44c1d1389de290395f0"
+    },
+    "bundle-social-import": {
+      "source": "antongulin/bundle-social-api-skill",
+      "sourceType": "github",
+      "skillPath": "skills/bundle-social-import/SKILL.md",
+      "computedHash": "aa06c669097a023ca9f8c9f7c14edc55ef7d4071a00cb909e47318e9288bdedf"
+    },
+    "bundle-social-platform-ops": {
+      "source": "antongulin/bundle-social-api-skill",
+      "sourceType": "github",
+      "skillPath": "skills/bundle-social-platform-ops/SKILL.md",
+      "computedHash": "1562ba5c64349c7bddcbc49c74b5c257944805e5d568a572bf910351efc2c617"
+    },
+    "bundle-social-posts": {
+      "source": "antongulin/bundle-social-api-skill",
+      "sourceType": "github",
+      "skillPath": "skills/bundle-social-posts/SKILL.md",
+      "computedHash": "2d418cd429f0d02a92a1a682814a8e83062bc7c50145342165547f03d3fa8d30"
+    },
+    "bundle-social-uploads": {
+      "source": "antongulin/bundle-social-api-skill",
+      "sourceType": "github",
+      "skillPath": "skills/bundle-social-uploads/SKILL.md",
+      "computedHash": "2fb7193f10470582f21925d75ed09609d4f42d71ad9269d0c40a01f67c25e23b"
+    }
+  }
+}
