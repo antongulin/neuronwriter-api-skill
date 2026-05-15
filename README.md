@@ -11,16 +11,16 @@ AI agent skill providing structured instructions for creating SEO-optimized cont
 
 ## Skill
 
-### [neuronwriter-api](./skill/SKILL.md)
+### [neuronwriter-api](./SKILL.md)
 
 Complete API integration for NEURONwriter. Performs the full content optimization lifecycle: project discovery, keyword analysis (with quota-aware proxy fallback), content brief generation with NLP term ranges, HTML content generation that enforces real term frequency ranges, content import and scoring, and iterative improvement.
 
 ```bash
 # List projects
-./skill/scripts/neuronwriter.sh list-projects
+./scripts/neuronwriter.sh list-projects
 
 # Create a keyword analysis query
-./skill/scripts/neuronwriter.sh new-query '{
+./scripts/neuronwriter.sh new-query '{
   "project": "PROJECT_ID",
   "keyword": "your target keyword",
   "engine": "google.com",
@@ -29,10 +29,10 @@ Complete API integration for NEURONwriter. Performs the full content optimizatio
 }'
 
 # Poll until ready and get recommendations
-./skill/scripts/neuronwriter.sh wait-and-get QUERY_ID 30
+./scripts/neuronwriter.sh wait-and-get QUERY_ID 30
 
 # Import content and get score
-./skill/scripts/neuronwriter.sh import-content '{
+./scripts/neuronwriter.sh import-content '{
   "query": "QUERY_ID",
   "html": "<h1>Title</h1><p>Content...</p>",
   "title": "SEO Title",
@@ -66,7 +66,7 @@ Clone the repo and copy the skill to your agent's skills path:
 
 ```bash
 git clone https://github.com/antongulin/neuronwriter-api-skill.git
-cp -r neuronwriter-api-skill/skill <agent-skills-path>/neuronwriter-api
+cp -r neuronwriter-api-skill/* <agent-skills-path>/neuronwriter-api/
 ```
 
 Replace `<agent-skills-path>` with your agent's skills directory. Common paths:
