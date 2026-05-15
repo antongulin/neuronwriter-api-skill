@@ -17,10 +17,10 @@ Complete API integration for NEURONwriter. Performs the full content optimizatio
 
 ```bash
 # List projects
-./scripts/neuronwriter.sh list-projects
+./skill/scripts/neuronwriter.sh list-projects
 
 # Create a keyword analysis query
-./scripts/neuronwriter.sh new-query '{
+./skill/scripts/neuronwriter.sh new-query '{
   "project": "PROJECT_ID",
   "keyword": "your target keyword",
   "engine": "google.com",
@@ -29,10 +29,10 @@ Complete API integration for NEURONwriter. Performs the full content optimizatio
 }'
 
 # Poll until ready and get recommendations
-./scripts/neuronwriter.sh wait-and-get QUERY_ID 30
+./skill/scripts/neuronwriter.sh wait-and-get QUERY_ID 30
 
 # Import content and get score
-./scripts/neuronwriter.sh import-content '{
+./skill/scripts/neuronwriter.sh import-content '{
   "query": "QUERY_ID",
   "html": "<h1>Title</h1><p>Content...</p>",
   "title": "SEO Title",
